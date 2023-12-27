@@ -1,2 +1,4 @@
-<?php
-require_once './views/pseudo.php';
+<?php 
+require_once "./View/index_vue.php";
+    echo $content;
+?>
