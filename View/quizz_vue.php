@@ -46,19 +46,20 @@ if ($i > 10) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./Contenu/style/style_quizz.css">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <title>Quiz</title>
 </head>
 
-<body>
+<body class="bg-gradient-to-r from-indigo-500 via-purple-500 to-orange-500">
     <header>
         <div class="logo"></div>
         <div class="w-9/12 bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 mx-1 mr-28 mt-9">
-        <div class="bg-black h-2.5 rounded-full" style="width: 66%"></div>
-        <div class="flex justify-end">
-       <button type="button" id="next" class="mx-2">Next</button>
-       </div>
-        
+            <div class="bg-orange-500 h-2.5 rounded-full" style="width: 66%"></div>
+            <div class="flex justify-end">
+                <button type="button" id="next" class="mx-2">Next</button>
+            </div>
+
     </header>
     <section class="sec1">
         <h2 style="color:black"><?php echo  'Question ' . $i; ?><h2>
@@ -81,10 +82,6 @@ if ($i > 10) {
         </form>
 
     </section>
-
-    <!-- footer -->
-    <?php require_once "./Contenu/footer.php"; ?>
-
     <!-- ajax -->
 
     <script>

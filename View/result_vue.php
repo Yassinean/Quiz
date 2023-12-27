@@ -35,8 +35,6 @@ $objetResult->terminer();
         <h2>Votre score est : <?php echo $objetResult->scoreContoleur() * 10; ?>/100</h2>
         <?php $objetResult->Correction(); ?>
     </section>
-    <!-- footer -->
-    <?php require_once "./Contenu/footer.php";?>
 </body>
             
 </html>
