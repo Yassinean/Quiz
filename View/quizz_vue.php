@@ -53,30 +53,29 @@ if ($i > 10) {
 
 <body class="bg-gradient-to-r from-indigo-500 via-purple-500 to-orange-500">
     <header>
-        <div class="logo"></div>
-        <div class="w-9/12 bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 mx-1 mr-28 mt-9">
+        <div class="w-9/12 bg-white rounded-full h-2.5 dark:bg-white mx-1 mr-28 mt-9">
             <div class="bg-orange-500 h-2.5 rounded-full" style="width: 66%"></div>
             <div class="flex justify-end">
                 <button type="button" id="next" class="mx-2">Next</button>
             </div>
-
+        </div>
     </header>
     <section class="sec1">
-        <h2 style="color:black"><?php echo  'Question ' . $i; ?><h2>
-                <div class="question">
-                    <h3 style="color:#59738D"><?php echo $objetQuestion->theme; ?></h3>
-                    <h5><?php echo $objetQuestion->questionText; ?></h5>
-                </div>
+        <h2 class="text-center text-xl text-white"><?php echo  'Question ' . $i; ?><h2>
+            <div class="question">
+                <h3 class="text-xl">Theme : <?php echo $objetQuestion->theme; ?></h3>
+                <h5 class=""><?php echo $objetQuestion->questionText; ?></h5>
+            </div>
     </section>
     <section class="sec2">
         <form method="GET" id="answersForm">
             <div class="div1">
-                <button type="button" class="answerButton" value="<?php echo $objetReponse->reponses[0]['idR']; ?>">A) <?php echo $objetReponse->reponses[0]['reponse']; ?></button>
-                <button type="button" class="answerButton" value="<?php echo $objetReponse->reponses[1]['idR']; ?>">B) <?php echo $objetReponse->reponses[1]['reponse']; ?></button>
+                <button type="button" class="answerButton" value="<?php echo $objetReponse->reponses[0]['idR']; ?>">A- <?php echo $objetReponse->reponses[0]['reponse']; ?></button>
+                <button type="button" class="answerButton" value="<?php echo $objetReponse->reponses[1]['idR']; ?>">B- <?php echo $objetReponse->reponses[1]['reponse']; ?></button>
             </div>
             <div class="div2">
-                <button type="button" class="answerButton" value="<?php echo $objetReponse->reponses[2]['idR']; ?>">C) <?php echo $objetReponse->reponses[2]['reponse']; ?></button>
-                <button type="button" class="answerButton" value="<?php echo $objetReponse->reponses[3]['idR']; ?>">D) <?php echo $objetReponse->reponses[3]['reponse']; ?></button>
+                <button type="button" class="answerButton" value="<?php echo $objetReponse->reponses[2]['idR']; ?>">C- <?php echo $objetReponse->reponses[2]['reponse']; ?></button>
+                <button type="button" class="answerButton" value="<?php echo $objetReponse->reponses[3]['idR']; ?>">D- <?php echo $objetReponse->reponses[3]['reponse']; ?></button>
             </div>
             <input type="hidden" name="selectedAnswer" id="selectedAnswer" value="">
         </form>
